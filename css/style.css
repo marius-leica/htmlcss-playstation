@@ -1,0 +1,38 @@
+nav.navbar {
+    top: auto
+}
+
+header>div img {
+    width: 10vh;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.dropdown-toggle .fa-chevron-down {
+    font-size: 0.6rem;
+    color: gray;
+}
+
+.jumbotron {
+    background: url("/img/returnal-listing-thumb-01-ps5.jpg"), black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 106px;
+}
+
+.jumbotron img {
+    width: 70%;
+}
+
+.full-height {
+    height: calc(100vh - 106px);
+}
+
+
+.section:not(.full-height) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
