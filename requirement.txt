@@ -1,0 +1,22 @@
+Esercizio di oggi:
+cartella/repo: htmlcss-playstation
+Descrizione
+Ricreiamo il layout responsive della home page di PlayStation, seguendo gli screenshot allegati, che sono i nostri riferimenti reali (non il sito online).
+La richiesta è realizzarlo utilizzando Bootstrap 5.
+Teniamo sempre sotto mano la documentazione della libreria per usare le caratteristiche principali nel modo corretto.
+Potrebbero tornarci utili anche classi helper, utilities etc.
+Avrete diversi giorni per completare il layout, come sempre partite dall’analisi delle macroaree.
+Di questo cercate anche di capire cosa è uguale o molto simile e quindi realizzabile una volta per poi essere riciclato, ottimizzando tempo e codice.
+Consigli:
+Ricordiamo che lavorando in responsive ogni blocco e sezione va pensato in quell’ottica da subito.
+Tenete un approccio ordinato ma non strafate anche con l’ottimizzazione durante il primo sviluppo di ogni blocco. Prima di passare al prossimo potete sempre tornarci e ripulire/ottimizzare/aggiustare.
+Soprattutto in ottica di riciclo, questo approccio, sul lungo termine vi farà risparmiare tempo.
+Questa volta essendo un layout molto lungo concentriamoci a portare a termine sezione per sezione anche in formato responsive, quando una macroarea funziona allora passiamo alla successiva.
+L’ordine di sviluppo dei blocchi lo possiamo decidere anche in ottica di ottimizzazione.
+Partite comunque sempre semplici e fate un passo alla volta.
+Come sempre cercate di capire quello che state facendo, cercate di finirlo ma non puntate a finirlo a tutti i costi, se ciò vuol dire non capirci più nulla.
+Tickets:
+Questo layout è l’ultima milestone del modulo HTML/CSS. Ormai siete in grado di lavorare su layout molto complessi, con un sufficiente livello di autonomia. È il momento di mettervi alla prova impegnando la vostra capacità di problem solving. Per questo nelle prossime giornate di Mercoledì (11/05) e Giovedì (12/05) il supporto dei ticket sarà sospeso dalle 12:00 alle 16:00.
+Cercate di sfruttare tutti gli strumenti pratici (inspector, validatori ecc.) e di ragionamento che avete appreso a usare fin qui, per risolvere le difficoltà e gli “intoppi” che vi si presenteranno.
+Quando vi sembrerà di non venirne a capo, sfruttate il tempo per chiarirvi i contorni del problema e descriverlo in maniera dettagliata per quando i ticket saranno disponibili, in modo da aiutare i vostri insegnanti ad assistervi nella ricerca delle soluzioni.
+Buon lavoro!
