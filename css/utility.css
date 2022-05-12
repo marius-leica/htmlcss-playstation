@@ -1,0 +1,36 @@
+.bg-gray {
+    background-color: var(--bs-light-rgb);
+}
+
+.bg-dark-blue {
+    background-color: var(--color-success);
+}
+
+.bg-blue {
+    background-color: var(--bs-primary-rgb);
+}
+
+.card-border {
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0.5rem 0;
+}
+
+.width-20 {
+    width: 20%;
+}
+
+.text-primary {
+    color: var(--bs-primary-rgb) !important;
+}
+
+.zoom-in:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s ease-in-out;
+}
+
+.full-h {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

@@ -1,0 +1,130 @@
+.standard-btn {
+    border-width: 1px;
+    border-radius: 30px;
+    position: relative;
+}
+
+.standard-btn:after {
+    content: "";
+    position: absolute;
+    left: -6px;
+    top: -6px;
+    right: -6px;
+    bottom: -6px;
+    border-radius: 30px;
+    opacity: 0;
+    transition: opacity 0.15s ease-in-out;
+}
+
+
+
+.btn-dark {
+    background-color: var(--color-terziary);
+    border-color: var(--color-terziary);
+}
+
+.btn-dark:hover {
+    background-color: var(--color-terziary-light);
+    border-color: var(--color-terziary-light);
+}
+
+.btn-check:focus+.btn-dark,
+.btn-dark:focus {
+    color: #fff;
+    background-color: var(--color-terziary);
+    border-color: var(--color-terziary);
+    box-shadow: 0 0 0 0;
+}
+
+.btn-dark:after {
+    content: "";
+    border: 2px solid var(--color-terziary);
+}
+
+.btn-dark:hover:after {
+    opacity: 1;
+}
+
+.btn-danger {
+    background-color: var(--bs-danger-rgb);
+    border-color: var(--bs-danger-rgb);
+}
+
+.btn-danger:hover {
+    background-color: var(--bs-danger-light-rgb);
+    border-color: var(--bs-danger-light-rgb);
+}
+
+.btn-check:focus+.btn-danger,
+.btn-danger:focus {
+    color: #fff;
+    background-color: var(--bs-danger-rgb);
+    border-color: var(--bs-danger-rgb);
+    box-shadow: 0 0 0 0;
+}
+
+.btn-danger:after {
+    content: "";
+    border: 2px solid var(--bs-danger-rgb);
+}
+
+.btn-danger:hover:after {
+    opacity: 1;
+}
+
+
+.btn-primary {
+    background-color: var(--bs-primary-rgb);
+    border-color: var(--bs-primary-rgb);
+}
+
+
+.btn-primary:hover {
+    background-color: var(--bs-primary-light-rgb);
+    border-color: var(--bs-primary-light-rgb);
+}
+
+
+.btn-check:focus+.btn-primary,
+.btn-primary:focus {
+    color: #fff;
+    background-color: var(--bs-primary-rgb);
+    border-color: var(--bs-primary-rgb);
+    box-shadow: 0 0 0 0;
+}
+
+.btn-primary:after {
+    content: "";
+    border: 2px solid var(--bs-primary-rgb);
+}
+
+.btn-primary:hover:after {
+    opacity: 1;
+}
+
+.btn-light {
+    background-color: var(--bs-light-light-rgb);
+    border-color: var(--bs-light-light-rgb);
+}
+
+.btn-light:hover {
+    background-color: var(--bs-superlight-rgb);
+    border-color: var(--bs-superlight-rgb);
+}
+
+.btn-check:focus+.btn-light,
+.btn-light:focus {
+    color: #fff;
+    background-color: var(--bs-light-light-rgb);
+    border-color: var(--bs-light-light-rgb);
+    box-shadow: 0 0 0 0;
+}
+
+.btn-light:after {
+    content: "";
+    border: 2px solid var(--bs-light-light-rgb);
+}
+
+.btn-light:hover:after {
+    opacity: 1;
+}

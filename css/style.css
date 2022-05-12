@@ -1,5 +1,12 @@
-:root {
+@import url("btn.css");
+@import url("utility.css");
+@import url("mediaquery.css");
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
     --bs-primary-rgb: rgb(0, 67, 156);
     --bs-primary-light-rgb: rgb(27, 90, 173);
     --bs-danger-rgb: rgb(255, 59, 48);
@@ -13,23 +20,10 @@
     --bs-superlight-rgb: rgb(212, 210, 209);
 }
 
-.bg-gray {
-    background-color: var(--bs-light-rgb);
+.section:not(.full-height) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
-
-.bg-dark-blue {
-    background-color: var(--color-success);
-}
-
-.bg-blue {
-    background-color: var(--bs-primary-rgb);
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-
 
 .sony-header {
     max-width: 75px;
@@ -45,7 +39,19 @@ nav {
     padding-bottom: 0;
 }
 
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--bs-primary-rgb) !important;
+    transition: color 0.15s ease-in-out;
+}
 
+.navbar-light .navbar-nav .nav-link:hover i {
+    color: var(--bs-primary-rgb) !important;
+    transition: color 0.15s ease-in-out;
+}
+
+.dropdown {
+    position: static;
+}
 
 .dropdown-toggle::after {
     display: none;
@@ -58,10 +64,6 @@ nav {
 
 .jumbotron {
     position: relative;
-}
-
-.margin-top {
-    margin-top: 106px;
 }
 
 .bg-img img {
@@ -84,202 +86,12 @@ nav {
     width: 50%;
 }
 
-
-.section:not(.full-height) {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-
-.card-border {
-    border-radius: 10px;
-    overflow: hidden;
-    margin: 0.5rem 0;
-}
-
 .banner-img {
     top: 0;
     bottom: 0;
     right: 0;
     height: 100%;
 }
-
-.width-20 {
-    width: 20%;
-}
-
-
-.btn-dark {
-    background-color: var(--color-terziary);
-    border-color: var(--color-terziary);
-    border-width: 1px;
-    border-radius: 30px;
-    position: relative;
-}
-
-.btn-dark:hover {
-    background-color: var(--color-terziary-light);
-    border-color: var(--color-terziary-light);
-}
-
-.btn-check:focus+.btn-dark,
-.btn-dark:focus {
-    color: #fff;
-    background-color: var(--color-terziary);
-    border-color: var(--color-terziary);
-    box-shadow: 0 0 0 0;
-}
-
-.btn-dark:after {
-    content: "";
-    position: absolute;
-    left: -4px;
-    top: -4px;
-    right: -4px;
-    bottom: -4px;
-    border-radius: 30px;
-    border: 2px solid var(--color-terziary);
-    opacity: 0;
-    transition: opacity 0.15s ease-in-out;
-}
-
-.btn-dark:hover:after {
-    opacity: 1;
-}
-
-.btn-danger {
-    background-color: var(--bs-danger-rgb);
-    border-color: var(--bs-danger-rgb);
-    border-width: 1px;
-    border-radius: 30px;
-    position: relative;
-}
-
-
-.btn-danger:hover {
-    background-color: var(--bs-danger-light-rgb);
-    border-color: var(--bs-danger-light-rgb);
-}
-
-
-.btn-check:focus+.btn-danger,
-.btn-danger:focus {
-    color: #fff;
-    background-color: var(--bs-danger-rgb);
-    border-color: var(--bs-danger-rgb);
-    box-shadow: 0 0 0 0;
-}
-
-.btn-danger:after {
-    content: "";
-    position: absolute;
-    left: -4px;
-    top: -4px;
-    right: -4px;
-    bottom: -4px;
-    border-radius: 30px;
-    border: 2px solid var(--bs-danger-rgb);
-    opacity: 0;
-    transition: opacity 0.15s ease-in-out;
-}
-
-.btn-danger:hover:after {
-    opacity: 1;
-}
-
-
-
-
-.btn-primary {
-    background-color: var(--bs-primary-rgb);
-    border-color: var(--bs-primary-rgb);
-    border-width: 1px;
-    border-radius: 30px;
-    position: relative;
-}
-
-
-.btn-primary:hover {
-    background-color: var(--bs-primary-light-rgb);
-    border-color: var(--bs-primary-light-rgb);
-}
-
-
-.btn-check:focus+.btn-primary,
-.btn-primary:focus {
-    color: #fff;
-    background-color: var(--bs-primary-rgb);
-    border-color: var(--bs-primary-rgb);
-    box-shadow: 0 0 0 0;
-}
-
-.btn-primary:after {
-    content: "";
-    position: absolute;
-    left: -4px;
-    top: -4px;
-    right: -4px;
-    bottom: -4px;
-    border-radius: 30px;
-    border: 2px solid var(--bs-primary-rgb);
-    opacity: 0;
-    transition: opacity 0.15s ease-in-out;
-}
-
-.btn-primary:hover:after {
-    opacity: 1;
-}
-
-
-.btn-light {
-    background-color: var(--bs-light-light-rgb);
-    border-color: var(--bs-light-light-rgb);
-    border-width: 1px;
-    border-radius: 30px;
-    position: relative;
-}
-
-
-.btn-light:hover {
-    background-color: var(--bs-superlight-rgb);
-    border-color: var(--bs-superlight-rgb);
-}
-
-
-.btn-check:focus+.btn-light,
-.btn-light:focus {
-    color: #fff;
-    background-color: var(--bs-light-light-rgb);
-    border-color: var(--bs-light-light-rgb);
-    box-shadow: 0 0 0 0;
-}
-
-.btn-light:after {
-    content: "";
-    position: absolute;
-    left: -4px;
-    top: -4px;
-    right: -4px;
-    bottom: -4px;
-    border-radius: 30px;
-    border: 2px solid var(--bs-light-light-rgb);
-    opacity: 0;
-    transition: opacity 0.15s ease-in-out;
-}
-
-.btn-light:hover:after {
-    opacity: 1;
-}
-
-.navbar-light .navbar-nav .nav-link:hover {
-    color: var(--bs-primary-rgb) !important;
-    transition: color 0.15s ease-in-out;
-}
-
-.navbar-light .navbar-nav .nav-link:hover i {
-    color: var(--bs-primary-rgb) !important;
-    transition: color 0.15s ease-in-out;
-}
-
 
 .my-card {
     transform: translateY(0);
@@ -295,8 +107,6 @@ nav {
     transform: translateY(-10%);
     transition: transform 0.5s ease-in-out;
 }
-
-
 
 .my-card:after {
     content: "";
@@ -315,11 +125,6 @@ nav {
     opacity: 1;
 }
 
-
-.text-primary {
-    color: var(--bs-primary-rgb) !important;
-}
-
 .ps5-img {
     width: 100%;
 }
@@ -336,36 +141,8 @@ nav {
     transition: all 0.15s ease-in-out;
 }
 
-.zoom-in:hover {
-    transform: scale(1.05);
-    transition: transform 0.5s ease-in-out;
-}
 
 
-
-
-@media screen and (max-width: 991px) {
-    .ps5-img {
-        width: 50%;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .ps5-img {
-        width: 100%;
-    }
-}
-
-.dropdown {
-    position: static;
-}
-
-@media screen and (min-width: 992px) {
-    .navbar-expand-lg .navbar-nav .dropdown-menu {
-        position: absolute;
-        width: 100vw;
-    }
-}
 
 
 
@@ -392,4 +169,10 @@ nav {
 a.dropdown-toggle:focus i {
     transform: rotate(180deg);
     transition: transform 0.5s ease-in-out;
+}
+
+
+
+.full-h .btn {
+    max-width: 124px;
 }

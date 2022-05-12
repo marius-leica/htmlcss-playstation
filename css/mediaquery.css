@@ -1,0 +1,25 @@
+@media screen and (max-width: 991px) {
+    .ps5-img {
+        width: 50%;
+    }
+
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+        position: absolute;
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .ps5-img {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+        position: absolute;
+        right: 0;
+    }
+}
